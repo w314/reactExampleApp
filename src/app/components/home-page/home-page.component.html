@@ -1,1 +1,9 @@
+<!-- use interpolation {{ }}to let information flow  -->
+<!-- from component class to the template -->
 <h1>{{title}}</h1>
+
+<h2>Counter</h2>
+<p>{{count}}</p>
+<!-- use event (click) binding to connect template -->
+<!-- to function declared in component class -->
+<button (click)="increaseCount()">+</button>

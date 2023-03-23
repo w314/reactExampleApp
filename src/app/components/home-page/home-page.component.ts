@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+// import { ConverterComponent } from '../converter/converter.component';
 
 @Component({
   selector: 'app-home-page',
@@ -8,14 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomePageComponent implements OnInit {
   
   // declare title property
-  title = 'Angular Home Page'
-
-  // declare count property to use in counter
-  count = 0
-  // declare function to increase count in counter
-  increaseCount() {
-    this.count = this.count + 1
-  }
+  title = 'Angular Examples'
 
   constructor() { }
 

@@ -1,0 +1,21 @@
+<!-- 
+  To use two-way binding to communicate between template and component class
+  FormsModule has to be imoport to app.module.ts and added to its imports[]
+ -->
+<h2>{{title}}</h2>
+<label for="g">Gramm</label>
+<!-- 
+  use two way binding [(ngModel)]="gramm" 
+  to connect value in input element and gramm property of component class
+  use event binding (keyup)="toOunce()" 
+  to make keyup event call toOunce() method of component class 
+ -->
+<input type="number" name="g" id="g" 
+  [(ngModel)]="gramm"
+  (keyup)="toOunce()" 
+>
+<label for="o">Ounce</label>
+<input type="number" name="o" id="o" 
+  [(ngModel)]="ounce"
+  (keyup)="toGramm()"
+>
